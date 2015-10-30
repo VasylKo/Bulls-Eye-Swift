@@ -130,7 +130,10 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="roundLabel" destination="0Pv-xU-t4R" id="Hik-ll-ivF"/>
+                        <outlet property="scoreLabel" destination="IOO-B5-rgd" id="cBH-PT-iYB"/>
                         <outlet property="slider" destination="LQb-yX-IZ8" id="aJz-PW-cR6"/>
+                        <outlet property="targetLabel" destination="Z06-mc-q1s" id="5BT-OJ-Dw5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
