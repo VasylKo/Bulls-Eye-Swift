@@ -63,7 +63,6 @@ class ViewController: UIViewController {
 
     // MARK: - Actions
     @IBAction func showAlert() {
-        
         /*
         var difference: Int
         if currentValue > targetValue {
@@ -99,7 +98,10 @@ class ViewController: UIViewController {
                                     message: message,
                                 preferredStyle: .Alert)
         
-        let action = UIAlertAction (title: "Ok", style: .Default, handler: nil)
+        let action = UIAlertAction (title: "Ok", style: .Default, handler:{
+            print($0)
+            print("Inside closure with short sintax")
+        })
         
         alert.addAction(action)
         
