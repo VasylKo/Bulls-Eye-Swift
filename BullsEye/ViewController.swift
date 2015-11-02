@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         //currentValue = lroundf(slider.value)
         //targetValue = 1 + Int(arc4random_uniform(100))
         
-        startNewRound()
+        startNewGame()
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,6 +50,12 @@ class ViewController: UIViewController {
         
         //Update UI
         self.updateLabels()
+    }
+    
+    func startNewGame() {
+        round = 0
+        score = 0
+        startNewRound()
     }
     
     // MARK: - Update UI
@@ -84,30 +90,66 @@ class ViewController: UIViewController {
         
         //OR
         let difference = abs(currentValue - targetValue)
-        let points = 100 - difference
-        score += points
+        var points = 100 - difference
+        
         
         /*
         let message = "The value of the slider is: \(currentValue)" +
         "\nThe target value is: \(targetValue)"
         + "\nThe difference is: \(difference)"
         */
+        
+        let title: String
+        
+        if difference == 0 {
+            title = "Perfect!"
+            
+            //Point bonus
+            points += 100
+            
+            if difference == 1 {
+                points += 50
+            }
+            
+        } else if difference < 5 {
+            title = "You almost had it!"
+            
+            //Point bonus
+            if difference == 1 {
+                points += 50
+            }
+            
+        } else if difference < 10 {
+            title = "Pretty god!"
+        } else {
+            title = "Not even close..."
+        }
+        
+        score += points
     
         let message = "You scored \(points) points"
-        let alert = UIAlertController (title: "Hello, Word",
+        let alert = UIAlertController (title: title,
                                     message: message,
                                 preferredStyle: .Alert)
         
+        /*
         let action = UIAlertAction (title: "Ok", style: .Default, handler:{
             print($0)
             print("Inside closure with short sintax")
+        })
+        */
+        
+        //OR
+        let action = UIAlertAction (title: "Ok", style: .Default, handler:{
+            action in
+            self.startNewRound()
         })
         
         alert.addAction(action)
         
         presentViewController(alert, animated: true, completion: nil)
         
-        startNewRound()
+        
     }
     
     @IBAction func sliderMoved(slider: UISlider) {
@@ -115,5 +157,9 @@ class ViewController: UIViewController {
         //print("The value of the slider is now: \(slider.value)")
     }
 
+    @IBAction func startOver(buttom: UIButton) {
+        self.startNewGame()
+    }
+    
 }
 
