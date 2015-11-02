@@ -32,11 +32,32 @@ class ViewController: UIViewController {
         //targetValue = 1 + Int(arc4random_uniform(100))
         
         startNewGame()
+        customizeSlider()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func customizeSlider() {
+        let thumbImageNormal = UIImage(imageLiteral:"SliderThumb-Normal")
+        slider.setThumbImage(thumbImageNormal, forState: .Normal)
+        
+        let thumbImageHighlighted = UIImage(imageLiteral: "SliderThumb-Highlighted")
+        slider.setThumbImage(thumbImageHighlighted, forState: .Highlighted)
+        
+        let insets = UIEdgeInsets(top: 0, left: 14.0, bottom: 0, right: 14.0)
+        
+        if let trackLeftImage = UIImage(named: "SliderTrackLeft") {
+            let trackLeftResizable = trackLeftImage.resizableImageWithCapInsets(insets)
+            slider.setMinimumTrackImage(trackLeftResizable, forState: .Normal)
+        }
+        
+        if let trackRightImage = UIImage(named: "SliderTrackRight") {
+            let trackRightResizable = trackRightImage.resizableImageWithCapInsets(insets)
+            slider.setMaximumTrackImage(trackRightResizable, forState: .Normal)
+        }
     }
     
     // MARK: - Game logic

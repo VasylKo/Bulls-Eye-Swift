@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		510BB51A1BE7810400E47B26 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510BB5191BE7810400E47B26 /* AboutViewController.swift */; };
+		510BB51C1BE7A33D00E47B26 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 510BB51B1BE7A33D00E47B26 /* BullsEye.html */; };
 		517E39A81BD8D22D00CDBEC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E39A71BD8D22D00CDBEC6 /* AppDelegate.swift */; };
 		517E39AA1BD8D22D00CDBEC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E39A91BD8D22D00CDBEC6 /* ViewController.swift */; };
 		517E39AD1BD8D22D00CDBEC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 517E39AB1BD8D22D00CDBEC6 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		510BB5191BE7810400E47B26 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		510BB51B1BE7A33D00E47B26 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = BullsEye.html; path = "../../../iOS books/iOS 9/Ray Wenderlich/Raywenderlich The iOS Apprentice Beginning iOS Development with Swift 2 4th Edition/The iOS Apprentice 1 - Getting Started/Resources/BullsEye.html"; sourceTree = "<group>"; };
 		517E39A41BD8D22D00CDBEC6 /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		517E39A71BD8D22D00CDBEC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		517E39A91BD8D22D00CDBEC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		517E39A61BD8D22D00CDBEC6 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				510BB51B1BE7A33D00E47B26 /* BullsEye.html */,
 				517E39A71BD8D22D00CDBEC6 /* AppDelegate.swift */,
 				517E39A91BD8D22D00CDBEC6 /* ViewController.swift */,
 				510BB5191BE7810400E47B26 /* AboutViewController.swift */,
@@ -125,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				517E39B21BD8D22D00CDBEC6 /* LaunchScreen.storyboard in Resources */,
+				510BB51C1BE7A33D00E47B26 /* BullsEye.html in Resources */,
 				517E39AF1BD8D22D00CDBEC6 /* Assets.xcassets in Resources */,
 				517E39AD1BD8D22D00CDBEC6 /* Main.storyboard in Resources */,
 			);
