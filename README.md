@@ -3,7 +3,8 @@ Insipred by Ray Wendelich books and tutorials on swift :
 - Ray Wenderlich – “Swift by Tutorials (A Hands-on Approach - for iOS 8 and Swift 1.2.)”
 - Ray Wenderlich – “Swift Apprentice (Beginning programming with Swift 2)”
 
-This app is made by me as a first part of Ray Wenderlich book – “The iOS Apprentice Fourth Edition (Beginning iOS Development with Swift 2) Tutorial 1: Getting Started”.
+This app is made by me as a first part of Ray Wenderlich book – “The iOS Apprentice Fourth Edition (Beginning iOS Development with Swift 2) Tutorial 1: Getting Started”.  
+Part of my [Swift learning progress.](https://github.com/VasylKo/Swift-learning-progress) 
 
 __Tools used:__ xCode 7.1 and swift 2.1.
 
